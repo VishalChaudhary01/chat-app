@@ -2,7 +2,7 @@
 
 A real-time chat application built using the **MERN Stack** — MongoDB, Express.js, React.js, and Node.js — with WebSocket support via the `ws` module. Users can join a shared chatroom, send and receive messages in real-time, and view the latest chat history.
 
----
+### Live Demo - https://chat-app-sage-two.vercel.app
 
 ## ✨ Features
 
@@ -11,8 +11,6 @@ A real-time chat application built using the **MERN Stack** — MongoDB, Express
 - Last 50 messages shown on new user join
 - Simple and responsive UI built with React + Tailwind CSS
 - Graceful handling of multiple client connections and disconnections
-
----
 
 ## 🏗️ Project Architecture
 
@@ -33,8 +31,6 @@ A real-time chat application built using the **MERN Stack** — MongoDB, Express
   - `username` (String)
   - `message` (String)
   - `timestamp` (Date)
-
----
 
 ## ⚙️ Local Development Setup
 
@@ -76,8 +72,6 @@ npm run dev
 
 > The app will be available at http://localhost:5173.
 
----
-
 ## 🌐 Deployment
 
 ### Deployed Backend
@@ -91,15 +85,12 @@ wss://chat-app-0i7h.onrender.com
 ### Frontend Deployment
 I have deployed frontend separately on vercel and configure the WebSocket URL using the VITE_WEB_SOCKET_SERVER env variable.
 
----
 
 ## 🧠 Assumptions & Design Choices
 - ws was used over socket.io to keep the WebSocket handling lightweight and low-level.
 - Messages are limited to the last 50 on join to reduce payload and improve performance.
 - No user authentication was added to keep the chat app open and simple.
 - Connection state and messages are managed in React state using hooks for simplicity.
-
----
 
 ## 🧪 Testing the WebSocket Server
 You can test WebSocket endpoints using tools like:
@@ -108,13 +99,9 @@ Hoppscotch – Use wss://chat-app-0i7h.onrender.com
 
 Postman (Beta) – Use the WebSocket tab with the same URL
 
----
-
 ## 📫 Contact
 
 **Vishal Chaudhary**  
 - [GitHub](https://github.com/VishalChaudhary01)  
 - [LinkedIn](https://www.linkedin.com/in/vishal-chaudhary-32462922a)  
 - vishalchaudhary8832@gmail.com
-
----

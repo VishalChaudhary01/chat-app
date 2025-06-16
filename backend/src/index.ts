@@ -1,10 +1,13 @@
 import express from "express";
 import { createServer } from "http";
 import { WebSocketServer } from "ws";
+import { connectDB } from "./config/db.config";
 
 const app = express();
 const server = createServer(app);
 const wss = new WebSocketServer({ server });
+
+connectDB();
 
 let count = 0;
 

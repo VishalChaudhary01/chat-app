@@ -1,4 +1,4 @@
-# 💬 MERN Chat App
+# 💬 Real-Time Chat Application
 
 A real-time chat application built using the **MERN Stack** — MongoDB, Express.js, React.js, and Node.js — with WebSocket support via the `ws` module. Users can join a shared chatroom, send and receive messages in real-time, and view the latest chat history.
 
